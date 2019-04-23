@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.rubin55</groupId>
+  <artifactId>eleven-archetype</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>eleven-archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.0.1</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>3.0.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <description>An example Maven project using Java 11 and JUnit 5.x.</description>
+
+  <url>https://github.com/rubin55/java-eleven</url>
+
+  <developers>
+    <developer>
+      <id>rubin</id>
+      <name>Rubin Simons</name>
+      <email>rubin@xs4all.nl</email>
+      <organization>Rubin's Laboratory</organization>
+      <organizationUrl>http://rubin55.org/</organizationUrl>
+    </developer>
+    <developer>
+      <id>freek</id>
+      <name>Freek Alleman</name>
+      <email>ikhouvan@xs4all.nl</email>
+      <organization>Fraik Out</organization>
+      <organizationUrl>https://fraik.nl/</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>git@github.com:rubin55/java-eleven.git</connection>
+    <developerConnection>git@github.com:rubin55/java-eleven.git</developerConnection>
+    <url>https://github.com/rubin55/java-eleven</url>
+  </scm>
+</project>

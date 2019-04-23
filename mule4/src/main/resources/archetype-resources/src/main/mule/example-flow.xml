@@ -1,0 +1,20 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+    xmlns="http://www.mulesoft.org/schema/mule/core"
+    xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+    xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+
+    <http:listener-config name="http-listener" doc:name="HTTP Listener Configuration" doc:id="cd9404f2-b4c0-43c9-a90b-411227dc6ed7">
+        <http:listener-connection host="0.0.0.0" port="8081" />
+    </http:listener-config>
+
+    <flow name="example-flow" doc:id="28470ee7-4b79-46de-8391-2301abfe4062">
+        <http:listener doc:name="HTTP Listener" doc:id="839503a0-2eee-4d55-82bc-ea0ac64d8b3b" config-ref="http-listener" path="/" />
+		<set-payload value="Hello, Mule World!" doc:name="Set Payload" doc:id="f340bb8b-1d60-41f5-aeb8-478221560733" />
+    </flow>
+</mule>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <name>Eleven</name>
+    <artifactId>${artifactId}</artifactId>
+    <groupId>${groupId}</groupId>
+    <version>${version}</version>
+
+    <description>An example Maven project using Java 11 and JUnit 5.x.</description>
+
+    <url>https://github.com/rubin55/java-${artifactId}</url>
+
+    <organization>
+        <name>Rubin's Laboratory</name>
+        <url>http://rubin55.org/</url>
+    </organization>
+
+    <scm>
+        <url>https://github.com/rubin55/java-eleven</url>
+        <connection>git@github.com:rubin55/java-eleven.git</connection>
+        <developerConnection>git@github.com:rubin55/java-eleven.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>Eleven Issues</system>
+        <url>https://github.com/rubin55/java-eleven/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Eleven Pipelines</system>
+        <url>https://github.com/rubin55/java-eleven/pipelines</url>
+    </ciManagement>
+
+    <developers>
+        <developer>
+            <id>rubin</id>
+            <email>rubin@xs4all.nl</email>
+            <name>Rubin Simons</name>
+            <organization>Rubin's Laboratory</organization>
+            <organizationUrl>http://rubin55.org/</organizationUrl>
+        </developer>
+        <developer>
+            <id>freek</id>
+            <email>ikhouvan@xs4all.nl</email>
+            <name>Freek Alleman</name>
+            <organization>Fraik Out</organization>
+            <organizationUrl>https://fraik.nl/</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <main.class>org.rubin55.eleven.HelloWorld</main.class>
+        <java.version>11</java.version>
+        <junit.jupiter.version>5.3.2</junit.jupiter.version>
+        <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+        <maven.jar.plugin.version>3.1.1</maven.jar.plugin.version>
+        <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <release>${java.version}</release>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>${main.class}</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
