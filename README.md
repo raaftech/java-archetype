@@ -1,4 +1,4 @@
-# A Maven archetype project for using Java 11 and JUnit 5.x
+# A Maven archetype project for using Java 8 and JUnit 5.x
 
 This is a Maven archetype project for using Java 8 and JUnit 5.x.
 
