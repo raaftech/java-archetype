@@ -5,7 +5,7 @@
     <name>java8-archetype</name>
     <artifactId>java8-archetype</artifactId>
     <groupId>tech.raaf</groupId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <licenses>
         <license>
@@ -26,7 +26,7 @@
         <url>https://github.com/raaftech/archetypes</url>
         <connection>https://github.com/raaftech/archetypes.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/raaftech/archetypes.git</developerConnection>
-      <tag>v1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
