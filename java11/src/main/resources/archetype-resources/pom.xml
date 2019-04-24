@@ -2,58 +2,101 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <name>Eleven</name>
+    <name>${artifactId}</name>
     <artifactId>${artifactId}</artifactId>
     <groupId>${groupId}</groupId>
     <version>${version}</version>
 
-    <description>An example Maven project using Java 11 and JUnit 5.x.</description>
+    <description>${projectDescription}</description>
 
-    <url>https://github.com/rubin55/java-${artifactId}</url>
+    <url>${projectUrl}</url>
+
+    <licenses>
+        <license>
+            <name>${licenseName}</name>
+            <url>${licenseUrl}</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <organization>
-        <name>Rubin's Laboratory</name>
-        <url>http://rubin55.org/</url>
+        <name>${organizationName}</name>
+        <url>${organizationUrl}</url>
     </organization>
 
     <scm>
-        <url>https://github.com/rubin55/java-eleven</url>
-        <connection>git@github.com:rubin55/java-eleven.git</connection>
-        <developerConnection>git@github.com:rubin55/java-eleven.git</developerConnection>
+        <url>${projectUrl}</url>
+        <connection>${scmUrl}</connection>
+        <developerConnection>${scmUrl}</developerConnection>
     </scm>
 
     <issueManagement>
-        <system>Eleven Issues</system>
-        <url>https://github.com/rubin55/java-eleven/issues</url>
+        <system>Issues</system>
+        <url>${bugTrackerUrl}</url>
     </issueManagement>
 
     <ciManagement>
-        <system>Eleven Pipelines</system>
-        <url>https://github.com/rubin55/java-eleven/pipelines</url>
+        <system>Pipelines</system>
+        <url>${buildSystemUrl}</url>
     </ciManagement>
+
+    <contributors>
+        <contributor>
+            <name>Some Contributor</name>
+            <email>some.contributor@example.com</email>
+            <url>http://example.com/</url>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>scrum-master</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </contributor>
+        <contributor>
+            <name>Another Contributor</name>
+            <email>another.contributor@example.com</email>
+            <url>http://example.com/</url>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>product-owner</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </contributor>
+    </contributors>
 
     <developers>
         <developer>
-            <id>rubin</id>
-            <email>rubin@xs4all.nl</email>
-            <name>Rubin Simons</name>
-            <organization>Rubin's Laboratory</organization>
-            <organizationUrl>http://rubin55.org/</organizationUrl>
+            <id>somedev</id>
+            <email>some.developer@example.com</email>
+            <name>Some Developer</name>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
         </developer>
         <developer>
-            <id>freek</id>
-            <email>ikhouvan@xs4all.nl</email>
-            <name>Freek Alleman</name>
-            <organization>Fraik Out</organization>
-            <organizationUrl>https://fraik.nl/</organizationUrl>
+            <id>otherdev</id>
+            <email>other.developer@example.com</email>
+            <name>Other Developer</name>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
         </developer>
     </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <main.class>org.rubin55.eleven.HelloWorld</main.class>
+        <main.class>${package}.HelloWorld</main.class>
         <java.version>11</java.version>
-        <junit.jupiter.version>5.3.2</junit.jupiter.version>
+        <junit.jupiter.version>5.4.2</junit.jupiter.version>
         <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
         <maven.jar.plugin.version>3.1.1</maven.jar.plugin.version>
         <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
@@ -77,7 +120,6 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
-                    <release>${java.version}</release>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>

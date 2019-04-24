@@ -28,26 +28,58 @@
     </pluginManagement>
   </build>
 
-  <description>An example Maven project using Java 8 and JUnit 5.x.</description>
+  <description>An example Maven project using Java 8 and JUnit 5.x</description>
 
   <url>https://github.com/raaftech/archetypes</url>
 
-  <developers>
-    <developer>
-      <id>rubin</id>
-      <name>Rubin Simons</name>
-      <email>rubin@raaf.tech</email>
-      <organization>RAAF Technology</organization>
-      <organizationUrl>http://raaf.tech/</organizationUrl>
-    </developer>
-    <developer>
-      <id>freek</id>
-      <name>Freek Alleman</name>
-      <email>freek@raaf.tech</email>
-      <organization>RAAF Technology</organization>
-      <organizationUrl>http://raaf.tech/</organizationUrl>
-    </developer>
-  </developers>
+    <contributors>
+        <contributor>
+            <name>Stephan Kaffa</name>
+            <email>stephan@raaf.tech</email>
+            <organization>RAAF Technology</organization>
+            <organizationUrl>http://raaf.tech/</organizationUrl>
+            <roles>
+                <role>scrum-master</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </contributor>
+    </contributors>
+
+    <developers>
+        <developer>
+            <id>rubin</id>
+            <name>Rubin Simons</name>
+            <email>rubin@raaf.tech</email>
+            <organization>RAAF Technology</organization>
+            <organizationUrl>http://raaf.tech/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </developer>
+        <developer>
+            <id>freek</id>
+            <name>Freek Alleman</name>
+            <email>freek@raaf.tech</email>
+            <organization>RAAF Technology</organization>
+            <organizationUrl>http://raaf.tech/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </developer>
+        <developer>
+            <id>jasper</id>
+            <name>Jasper Spoel</name>
+            <email>jasper@raaf.tech</email>
+            <organization>RAAF Technology</organization>
+            <organizationUrl>http://raaf.tech/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </developer>
+    </developers>
 
   <scm>
     <connection>git@github.com:raaftech/archetypes.git</connection>

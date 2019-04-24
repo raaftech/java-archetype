@@ -2,6 +2,50 @@
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="eleven"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+      <requiredProperties>
+        <requiredProperty key="artifactId">
+            <defaultValue>test</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="groupId">
+            <defaultValue>com.example</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="package">
+            <defaultValue>com.example.test</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="projectDescription">
+            <defaultValue>An example Java 11 project using Maven and JUnit 5.x</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="projectUrl">
+            <defaultValue>https://github.com/example/test</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="licenseName">
+            <defaultValue>MIT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="licenseUrl">
+            <defaultValue>https://spdx.org/licenses/MIT.html</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="organizationName">
+            <defaultValue>Example Organization</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="organizationUrl">
+            <defaultValue>http://example.com/</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="scmUrl">
+            <defaultValue>git@github.com:example/test.git</defaultValue>
+            <validationRegex/>
+        </requiredProperty>
+        <requiredProperty key="bugTrackerUrl">
+            <defaultValue>https://github.com/example/test/issues</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="buildSystemUrl">
+            <defaultValue>https://github.com/example/test/pipelines</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
   <fileSets>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
       <directory>src/main/java</directory>
@@ -24,26 +68,7 @@
         <include>**/*.java</include>
       </includes>
     </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>.vscode</directory>
-      <includes>
-        <include>**/*.json</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory>.settings</directory>
-      <includes>
-        <include>**/*.prefs</include>
-      </includes>
-    </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
-      <directory></directory>
-      <includes>
-        <include>.classpath</include>
-        <include>.project</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
         <include>README.md</include>
@@ -51,4 +76,5 @@
       </includes>
     </fileSet>
   </fileSets>
+
 </archetype-descriptor>
