@@ -15,7 +15,7 @@
 
     <description>An example Maven project using Java 8 and JUnit 5.x</description>
 
-    <url>https://github.com/raaftech/archetypes</url>
+    <url>https://github.com/raaftech/java8-archetype</url>
 
     <organization>
         <name>RAAF Technology</name>
@@ -23,20 +23,20 @@
     </organization>
 
     <scm>
-        <url>https://github.com/raaftech/archetypes</url>
-        <connection>https://github.com/raaftech/archetypes.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/raaftech/archetypes.git</developerConnection>
+        <url>https://github.com/raaftech/java8-archetype</url>
+        <connection>https://github.com/raaftech/java8-archetype.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/raaftech/java8-archetype.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
         <system>Issues</system>
-        <url>https://github.com/raaftech/archetypes/issues</url>
+        <url>https://github.com/raaftech/java8-archetype/issues</url>
     </issueManagement>
 
     <ciManagement>
         <system>Pipelines</system>
-        <url>https://github.com/raaftech/archetypes/pipelines</url>
+        <url>https://github.com/raaftech/java8-archetype/pipelines</url>
     </ciManagement>
 
     <contributors>
