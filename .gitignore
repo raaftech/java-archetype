@@ -1,4 +1,7 @@
-# Maven stuff.
+#  General.
+**/temp/
+
+# Maven.
 **/target/
 **/pom.xml.tag
 **/pom.xml.releaseBackup
