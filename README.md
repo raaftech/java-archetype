@@ -2,7 +2,7 @@
 
 This is a Maven archetype project for using Java 8 and JUnit 5.x.
 
-The above archetypes are deployed to the main SonaType Maven repository so you should be able to use them by simply typing `mvn archetype:generate` and filtering on the `tech.raaf` groupId (the syntax for filtering on groupId is `:tech.raaf`, notice the colon).
+This archetype is deployed to the main SonaType OSS Maven repository so you should be able to use them by simply typing `mvn archetype:generate` and filtering on the `tech.raaf` groupId (the syntax for filtering on groupId is `:tech.raaf`, notice the colon).
 
 You can also clone this repository and `mvn clean install`. After you do that, you can `cd ../somewhere-else` and run `mvn archetype:generate` and the last item on the list will be your locally installed archetype which you can select by number.
 
