@@ -244,10 +244,14 @@
                 <version>${maven.eclipse.plugin.version}</version>
                 <configuration>
                     <additionalProjectnatures>
-                        <projectnature>org.mule.tooling.core.muleStudioNature</projectnature>
+                        <projectnature>org.eclipse.m2e.core.maven2Nature</projectnature>
+                        <projectnature>org.mule.tooling.core.muleNature</projectnature>
+                        <projectnature>org.mule.tooling.maven.mavenNature</projectnature>
                     </additionalProjectnatures>
                     <additionalBuildcommands>
-                        <buildcommand>org.mule.tooling.core.muleStudioBuilder</buildcommand>
+                        <buildcommand>org.eclipse.m2e.core.maven2Builder</buildcommand>
+                        <buildcommand>org.mule.tooling.maven.mavenBuilder</buildcommand>
+                        <buildcommand>org.mule.tooling.core.muleBuilder</buildcommand>
                     </additionalBuildcommands>
                 </configuration>
             </plugin>
