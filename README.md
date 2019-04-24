@@ -10,3 +10,6 @@ The resulting Java project contains a minimal HelloWorld and accompanying test a
 
  * `mvn clean package`
  * `java -jar target/${artifactId}-${version}.jar`
+
+Note: you need Java 8 to run this. You can get it from [AdoptOpenJDK](https://adoptopenjdk.net/)
+
