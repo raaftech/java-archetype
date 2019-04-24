@@ -36,7 +36,6 @@
         </requiredProperty>
         <requiredProperty key="scmUrl">
             <defaultValue>git@github.com:example/test.git</defaultValue>
-            <validationRegex/>
         </requiredProperty>
         <requiredProperty key="bugTrackerUrl">
             <defaultValue>https://github.com/example/test/issues</defaultValue>
