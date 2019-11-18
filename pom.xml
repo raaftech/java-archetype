@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <packaging>maven-archetype</packaging>
-    <name>java8-archetype</name>
-    <artifactId>java8-archetype</artifactId>
+    <name>java-archetype</name>
+    <artifactId>java-archetype</artifactId>
     <groupId>tech.raaf</groupId>
     <version>1.0.1-SNAPSHOT</version>
 
@@ -15,7 +15,7 @@
 
     <description>An example Maven project using Java 8 and JUnit 5.x</description>
 
-    <url>https://github.com/raaftech/java8-archetype</url>
+    <url>https://github.com/raaftech/java-archetype</url>
 
     <organization>
         <name>RAAF Technology</name>
@@ -23,20 +23,20 @@
     </organization>
 
     <scm>
-        <url>https://github.com/raaftech/java8-archetype</url>
-        <connection>https://github.com/raaftech/java8-archetype.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/raaftech/java8-archetype.git</developerConnection>
+        <url>https://github.com/raaftech/java-archetype</url>
+        <connection>https://github.com/raaftech/java-archetype.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/raaftech/java-archetype.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
         <system>Issues</system>
-        <url>https://github.com/raaftech/java8-archetype/issues</url>
+        <url>https://github.com/raaftech/java-archetype/issues</url>
     </issueManagement>
 
     <ciManagement>
         <system>Pipelines</system>
-        <url>https://github.com/raaftech/java8-archetype/pipelines</url>
+        <url>https://github.com/raaftech/java-archetype/pipelines</url>
     </ciManagement>
 
     <contributors>
