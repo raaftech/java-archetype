@@ -13,7 +13,7 @@
         </license>
     </licenses>
 
-    <description>An example Maven project using Java 8 and JUnit 5.x</description>
+    <description>An example Maven project using Java 11 and JUnit 5.x</description>
 
     <url>https://github.com/raaftech/java-archetype</url>
 

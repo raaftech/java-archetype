@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class HelloWorldTest {
@@ -16,7 +15,7 @@ public class HelloWorldTest {
     @Test
     public void testImmutableCollections() {
 
-        List<String> fruits = Arrays.asList(new String[]{"Mangosteen", "Durian fruit", "Longan"});
+        List<String> fruits = List.of("Mangosteen", "Durian fruit", "Longan");
 
         assertThrows(UnsupportedOperationException.class, () -> {
             fruits.add("Mango");

@@ -1,6 +1,6 @@
-# A Maven archetype project for using Java 8 and JUnit 5.x
+# A Maven archetype project for using Java 11 and JUnit 5.x
 
-This is a Maven archetype project for using Java 8 and JUnit 5.x.
+This is a Maven archetype project for using Java 11 and JUnit 5.x.
 
 This archetype is deployed to the main SonaType OSS Maven repository so you should be able to use them by simply typing `mvn archetype:generate` and filtering on the `tech.raaf` groupId (the syntax for filtering on groupId is `tech.raaf:`, notice the colon).
 
@@ -11,5 +11,4 @@ The resulting Java project contains a minimal HelloWorld and accompanying test a
  * `mvn clean package`
  * `java -jar target/${artifactId}-${version}.jar`
 
-Note: you need Java 8 to run this. You can get it from [AdoptOpenJDK](https://adoptopenjdk.net/)
-
+Note: you need Java 11 to run this. You can get it from [AdoptOpenJDK](https://adoptopenjdk.net/)
